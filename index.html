@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="calculator">
+        <h2>Calculator</h2>
+        <input id="calcInput" type="text" readonly />
+        <table style="height: 90px; width: 150px;">
+            <tr>
+                <td><button onclick="appendCalc('7')">7</button></td>
+                <td><button onclick="appendCalc('8')">8</button></td>
+                <td><button onclick="appendCalc('9')">9</button></td>
+                <td><button onclick="appendCalc('/')">/</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="appendCalc('4')">4</button></td>   
+                <td><button onclick="appendCalc('5')">5</button></td>
+                <td><button onclick="appendCalc('6')">6</button></td>
+                <td><button onclick="appendCalc('*')">*</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="appendCalc('1')">1</button></td>
+                <td><button onclick="appendCalc('2')">2</button></td>
+                <td><button onclick="appendCalc('3')">3</button></td>
+                <td><button onclick="appendCalc('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="appendCalc('.')">.</button></td>
+                <td><button onclick="appendCalc('0')">0</button></td>
+                <td><button onclick="appendCalc('+')">+</button></td>
+                <td><button onclick="calculate()">=</button></td>
+            </tr>
+            <tr><button onclick="clearCalc()">Clear</button></tr>
+        </table>   
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
